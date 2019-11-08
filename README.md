@@ -21,6 +21,7 @@ html
 
 js
 ```javascript
+import { useTimeago } from "vue-compose-timeago"
 setup() {
   const { timer } = useTimeago({ locale: 'en', long: true, refresh: true })
   const { time, timeago } = timer(new Date())
@@ -65,6 +66,7 @@ locale support list :
 - French ( fr )
 - Polish ( pl )
 - Turkish ( tr )
+- Russian ( ru )
 
 Thanks for help:
 
@@ -94,4 +96,8 @@ Thanks for help:
 
 <a href="https://github.com/Nisgrak">
   <img src="https://avatars3.githubusercontent.com/u/19597708?s=460&v=4" width="30" style="border-radius: 100%;"/>
+</a>
+
+<a href="https://github.com/drrainlab">
+  <img src="https://avatars1.githubusercontent.com/u/22350198?s=88&v=4" width="30" style="border-radius: 100%;"/>
 </a>

@@ -8,12 +8,14 @@ import ar from './countries/ar'
 import fr from './countries/fr'
 import pl from './countries/pl'
 import tr from './countries/tr'
+import ru from './countries/ru'
 
 export default {
   zh_TW,
   zh_CN,
   en,
   jp,
+  ru, // Russian 俄羅斯
   pt_BR, // Portugal(Brazil) 葡萄牙文 (巴西)
   es, // Spain 西班牙文
   ar, // Arabia 阿拉伯文
