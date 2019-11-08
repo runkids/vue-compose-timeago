@@ -7,7 +7,7 @@ import {
 } from '@vue/composition-api'
 import format from './lib/index'
 
-const useTimeago = options => {
+const useTimeago = (options = {}) => {
   if (Object.prototype.toString.call(options) !== '[object Object]') {
     throw new Error(`[useTimeago]: options should to be an object`)
   }
