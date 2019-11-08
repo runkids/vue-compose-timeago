@@ -7,9 +7,9 @@ import {
 } from '@vue/composition-api'
 import format from './lib/index'
 
-export default function useTimego(options) {
+const useTimeago = options => {
   if (Object.prototype.toString.call(options) !== '[object Object]') {
-    throw new Error(`[useTimego]: options should to be an object`)
+    throw new Error(`[useTimeago]: options should to be an object`)
   }
   const { locale = 'en', long = false, refresh = true } = options
 
@@ -31,7 +31,7 @@ export default function useTimego(options) {
       if (refresh) {
         intervalId.value = setInterval(
           () => reloadTime(datetime, data),
-          refresh === true ? 60 : refresh * 1000
+          (refresh === true ? 60 : refresh) * 1000
         )
       }
     })
@@ -49,3 +49,5 @@ export default function useTimego(options) {
     timer,
   }
 }
+
+export { useTimeago }
