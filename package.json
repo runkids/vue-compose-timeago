@@ -1,6 +1,6 @@
 {
   "name": "vue-compose-timeago",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Format date with time ago statement using vue composition api ",
   "main": "dist/vue-compose-timeago.esm.js",
   "unpkg": "dist/vue-compose-timeago.js",
