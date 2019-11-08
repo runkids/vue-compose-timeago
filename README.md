@@ -5,7 +5,13 @@
 
 ## Installation
 
+npm
 ```sh
+npm install vue-compose-timeago
+```
+yarn
+```sh
+yarn add vue-compose-timeago
 ```
 
 ## Usage
@@ -23,7 +29,7 @@ js
 ```javascript
 import { useTimeago } from "vue-compose-timeago"
 setup() {
-  const { timer } = useTimeago({ locale: 'en', long: true, refresh: true })
+  const { timer } = useTimeago({ locale: 'en', long: true, refresh: 60 })
   const { time, timeago } = timer(new Date())
 
   return {
